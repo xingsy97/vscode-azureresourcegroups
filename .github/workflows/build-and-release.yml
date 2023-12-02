@@ -22,7 +22,10 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    - name: Run Package Script
+    - name: Run npm build
+      run: npm run build
+
+    - name: Run npm package
       run: npm run package
 
     - name: Extract Version from package.json
